@@ -3,6 +3,7 @@
 namespace App\Controller;
 
 use App\Entity\Category;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\ParamConverter;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
@@ -13,10 +14,11 @@ class CategoryController extends Controller
 {
 
     /**
-     * @Route("/category/{id}/{page}",
+     * @Route("/category/{slug}/{page}",
      *     name="category_show",
      *     requirements={"page": "\d+"}
      *     )
+     * @ParamConverter("slug", options={"mapping": {"slug": "slug"}})
      *
      * @param Category $category
      * @param $page
