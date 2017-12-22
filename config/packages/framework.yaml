@@ -14,3 +14,9 @@ framework:
     #fragments: ~
     php_errors:
         log: true
+
+    translator: ~
+
+    templating:
+        engines: twig
+

@@ -28,4 +28,14 @@ class Catalogue
         return $repo->findAll();
     }
 
+    /**
+     * @return Category[]|array
+     */
+    public function getTopCategories()
+    {
+        $repo = $this->em->getRepository(Category::class);
+
+        return $repo->findBy(['parent' => null], ['name' => 'ASC']);
+    }
+
 }
