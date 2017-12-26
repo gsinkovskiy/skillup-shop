@@ -164,6 +164,9 @@
     "symfony/event-dispatcher": {
         "version": "v4.0.0"
     },
+    "symfony/expression-language": {
+        "version": "4.0.x-dev"
+    },
     "symfony/filesystem": {
         "version": "v4.0.0"
     },
