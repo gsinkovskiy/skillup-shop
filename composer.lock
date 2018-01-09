@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "f446af5e8a50a754f5537b2c34fb4a37",
-    "content-hash": "ae98b93c1aff82a750c8576617303039",
+    "hash": "ec84cbbaa2f0bc23b7ea1bfacc934bad",
+    "content-hash": "635e168a378f73c794f0ff27456f2f52",
     "packages": [
         {
             "name": "behat/transliterator",
@@ -3322,16 +3322,16 @@
         },
         {
             "name": "symfony/form",
-            "version": "v4.0.2",
+            "version": "4.0.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/form.git",
-                "reference": "8c8cf3d9981a5ceb841ecef65570a422f3ecff71"
+                "reference": "3ece1a890feba59740bb4a7b990628efb7408b0f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/form/zipball/8c8cf3d9981a5ceb841ecef65570a422f3ecff71",
-                "reference": "8c8cf3d9981a5ceb841ecef65570a422f3ecff71",
+                "url": "https://api.github.com/repos/symfony/form/zipball/3ece1a890feba59740bb4a7b990628efb7408b0f",
+                "reference": "3ece1a890feba59740bb4a7b990628efb7408b0f",
                 "shasum": ""
             },
             "require": {
@@ -3398,7 +3398,7 @@
             ],
             "description": "Symfony Form Component",
             "homepage": "https://symfony.com",
-            "time": "2017-12-14 19:48:22"
+            "time": "2018-01-03 07:38:00"
         },
         {
             "name": "symfony/framework-bundle",

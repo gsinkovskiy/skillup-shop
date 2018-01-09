@@ -4,8 +4,10 @@
 namespace App\Controller;
 
 
+use App\Form\FeedbackType;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Session\SessionInterface;
 use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
 
@@ -34,6 +36,20 @@ class AboutController extends Controller
     public function redirectToShow()
     {
         return $this->redirectToRoute('about_show');
+    }
+
+    /**
+     * @Route("/feedback", name="feedback")
+     *
+     * @param Request $request
+     */
+    public function feedback(Request $request)
+    {
+        $form = $this->createForm(FeedbackType::class);
+
+        return $this->render('about/feedback.html.twig', [
+            'form' => $form->createView(),
+        ]);
     }
 
 }
